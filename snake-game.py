@@ -2,6 +2,8 @@
 #               - 'SPACEBAR' TO PAUSE / RESUME
 #               - PRESS 'ESC' BUTTON WHILE THE IS CURSER MOVING TO QUIT. WILL NOT ESCAPE IF PAUSED.
 #               - HAVE FUN!! It's even more breaking down the code and understanding it all! :)
+#
+# Sidebar: I don't mean array... Jumping back and forth from languages :D | D:
 
 
 import curses
@@ -24,7 +26,7 @@ win.nodelay(1)                                                                  
 key = KEY_RIGHT                                                                     # Assigning value for key
 score = 0                                                                           # Assigning value to score
 count = 0
-snake = [[15,15],[0,0]]                                                               # snake[0] is the starting position. Each new list in the arry is a "body part" so in this case the snake starts with 2 body parts.
+snake = [[15,15],[0,0]]                                                             # snake[0] is the starting position. Each new list in the arry is a "body part" so in this case the snake starts with 2 body parts.
 
 food = [randint(1, 49), randint(1, 119)]                                            # coordinates of where the first piece of food will be in the window. Random makes it more fun than the same spot each time.
 win.addch(food[0], food[1], '$')                                                    # Assigns a character for that particular spot on the window where the food will start. Both index 0, and index 1 of Food will need the same char symbol. Think about it.
@@ -43,7 +45,7 @@ while key != 27:                                                                
     
     prevKey = key                                                                   # Assigns var prevKey to the current key, or the last key pressed if unpressed again.
     event = win.getch()                                                             # var event waiting for win.getch() to capture character from user so it can exist.
-    key = key if event == -1 else event                                             # if -1 is used when the pause "if statement" is used, it will keep assigning -1 to key, repeatedly until the chain is broken. Else it will just grab the event and reassign key.
+    key = key if event == -1 else event                                             
 
     if key == ord(' '):                                                             # empty space == '32' which is ASCII for 'space bar'. If the keystroke is spacebar, key is assigned to 32 and gets stuck in this if statement. Then key is reassigned to -1. Thus placing it in a loop of being reassigned to -1 in the code above.
         key = -1                                                                    # one (Pause/Resume)
