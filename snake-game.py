@@ -30,12 +30,12 @@ food = [randint(1, 49), randint(1, 119)]                                        
 win.addch(food[0], food[1], '$')                                                    # Assigns a character for that particular spot on the window where the food will start. Both index 0, and index 1 of Food will need the same char symbol. Think about it.
 
 
-while key != 27:
-    win.attron(A_BOLD)                                                                      # This is where the fun happens. 27 ASCII code for 'ESC'. When you hit it, while it's moving. It will break the while loop and end the window.
-    win.border(0)                                                                   # I am assuming that is is ensuring that the window border still doesn't exist.
-    win.addstr(0, 15, ' Score : ' + str(score) + ' ')                                 # Printing 'Score' on the window. You can position it where ever you want.
-    win.addstr(0, 45, ' SNAKE! Traveled - ' + str(count) + ' spaces! ')
-    win.attroff(A_BOLD)                                                    # Printing 'SNAKE' on the window. You can position it where ever you want
+while key != 27:                                                                    # This is where the fun happens. 27 ASCII code for 'ESC'. When you hit it, while it's moving. It will break the while loop and end the window.
+    win.attron(A_BOLD)                                                              
+    win.border(0)                                                                   
+    win.addstr(0, 15, ' Score : ' + str(score) + ' ')                               # Printing 'Score' on the window. You can position it where ever you want.
+    win.addstr(0, 45, ' SNAKE! Traveled - ' + str(count) + ' spaces! ')             # Printing 'SNAKE' on the window. You can position it where ever you want
+    win.attroff(A_BOLD)                                                    
     
     speed = int(90 - (len(snake)/5 + len(snake)/10) % 120)                          # Adjusts the speed. Write it out if it helps you do the math on how this equates. 
     win.timeout(speed)                                                              # Each time you eat food and a body part extends the body, this number will adjust to make it go faster.
@@ -49,8 +49,8 @@ while key != 27:
         key = -1                                                                    # one (Pause/Resume)
 
         while key != ord(' '):                                                      # Tried to explain the loop but it takes too much text. Figure it out :D
-            key = win.getch()                                                       #
-            curses.beep()                                                           # Added a beep so you can hear when it repeats the loop.
+            key = win.getch()                                                       
+            curses.beep()                                                           # Added a beep so you can hear when it repeats the loop. Just delete if it's annoying.
 
         key = prevKey
         continue
