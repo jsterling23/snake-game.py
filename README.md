@@ -1,6 +1,6 @@
 # Snake Game!
 
-> Created this as a fun project over the weekend and to learn a library I havn't messed with before. 
+> Created this as a fun project over the weekend to learn a library I havn't messed with before. 
 > Who doesn't like a classic like snake?? 
 
 ## Getting Started
