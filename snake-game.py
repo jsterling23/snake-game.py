@@ -24,7 +24,7 @@ win.nodelay(1)                                                                  
 key = KEY_RIGHT                                                                     # Assigning value for key
 score = 0                                                                           # Assigning value to score
 count = 0
-snake = [[5,5],[0,0]]                                                               # snake[0] is the starting position. Each new list in the arry is a "body part" so in this case the snake starts with 2 body parts.
+snake = [[15,15],[0,0]]                                                               # snake[0] is the starting position. Each new list in the arry is a "body part" so in this case the snake starts with 2 body parts.
 
 food = [randint(1, 49), randint(1, 119)]                                            # coordinates of where the first piece of food will be in the window. Random makes it more fun than the same spot each time.
 win.addch(food[0], food[1], '$')                                                    # Assigns a character for that particular spot on the window where the food will start. Both index 0, and index 1 of Food will need the same char symbol. Think about it.
