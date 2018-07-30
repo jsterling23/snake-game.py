@@ -75,7 +75,7 @@ while key != 27:                                                                
         food = []                                                   # Reassigns food to an empty array, ready to be reassigned.    
         score += 1                                                  # LVL UP BITCH!
         while food == []:                                           # Executed because the window is hungry for food.
-            food = [randint(1, 49), randint(1, 119)]                # Random [x,y]'s generated for the food, placing it somewhere on the window next.
+            food = [randint(1, 48), randint(1, 118)]                # Random [x,y]'s generated for the food, placing it somewhere on the window next.
             if food in snake:                                       # If the new generated foods values match a set of values within the snakes array, it will reset the while. 
                 food = []                                          
         win.addch(food[0], food[1], '$')                            # WHen the new food passes the while validator, it will then be assigned to actual food variable.
@@ -89,3 +89,7 @@ while key != 27:                                                                
 curses.endwin()                                                     # You should be able to figure this out.
 
 print('Your score was ' + str(score) + '!')                         # Bet you cant beat my score of 245!! :D
+
+
+
+
