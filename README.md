@@ -4,8 +4,7 @@
 > Who doesn't like a classic like snake?? 
 
 ## Getting Started
-> I build this on a Mac so I am not sure how curses library will work on windows os but I hear it doesn't work, or it's not supported for windows.
-> UPDATE: For Windows users go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses and find your python version and os. 
+> First and foremost, have fun with this. If none of this makes sense, spend some time to learn something new.
 
 ## Windows Users
 > curses library isn't supported so go here and download the correct python version & os http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses
