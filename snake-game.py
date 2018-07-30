@@ -61,7 +61,7 @@ while key != 27:                                                                
     # This insert actually adds a new 'head' to the snake, then the if statement below about the food, the else: in that statement actually pops the last array within the array so it appears to stay the same length when in fact it does increase here.
     snake.insert(0, [snake[0][0] + (key == KEY_DOWN and 1) + (key == KEY_UP and -1), snake[0][1] + (key == KEY_LEFT and -1) + (key == KEY_RIGHT and 1)])
 
-    # Exit if snake crosses the boundaries (Uncomment to enable)
+    # Will exit the game if the borders are touched by the snake.
     if snake[0][0] == 0 or snake[0][0] == 49 or snake[0][1] == 0 or snake[0][1] == 119:
         curses.beep() 
         break
