@@ -3,7 +3,7 @@
 #               - PRESS 'ESC' BUTTON WHILE THE IS CURSER MOVING TO QUIT. WILL NOT ESCAPE IF PAUSED.
 #               - HAVE FUN!! It's even more breaking down the code and understanding it all! :)
 #
-# Sidebar: I don't mean array... Jumping back and forth from languages :D | D:
+# UPDATE: Corrected my comments to reflect python syntax. No more "array".
 
 
 import curses
