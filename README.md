@@ -4,13 +4,18 @@
 > Who doesn't like a classic like snake?? 
 
 ## Getting Started
-
 > I build this on a Mac so I am not sure how curses library will work on windows os but I hear it doesn't work, or it's not supported for windows.
+> UPDATE: For Windows users go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses and find your python version and os. 
 
-Otherwise, just take it and have fun.
+## Windows Users
+> curses library isn't supported so go here and download the correct python version & os http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses
+* Download the correct python curses library
+* Add it to your folder
+```
+>pip install <FILENAME>
+```
 
 ## Prerequisites
-
 * Just make sure you have python installed.
 * Terminal window: At least... Width 150. Height 60.
 
@@ -20,12 +25,10 @@ $ python snake-game.py
 ```
 
 ## Built with
-
 * Python 3.7
 * curses library
 
 ## Contributions
-
 If you come up with any cool ideas, share them!
 
 ## License
