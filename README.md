@@ -5,17 +5,16 @@
 
 ## Getting Started
 
-> I build this on a Mac so I am not sure how curses library will work on windows os but I hear it doesn't work, or it's not supported > for windows.
+> I build this on a Mac so I am not sure how curses library will work on windows os but I hear it doesn't work, or it's not supported for windows.
 
 Otherwise, just take it and have fun.
 
-### Prerequisites
+## Prerequisites
 
 * Just make sure you have python installed.
-> I'm running 3.7
 * Terminal window: At least... Width 150. Height 60.
 
-### Launch it!
+## Launch it!
 ```
 $ python snake-game.py
 ```
