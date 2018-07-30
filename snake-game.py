@@ -67,7 +67,7 @@ while key != 27:                                                                
         break
 
 
-    if snake[0] in snake[1:]:                                                       # If the snakehead's [x,y] values match another value within the snakes array. It will exit.  
+    if snake[0] in snake[1:]:                                       # If the snakehead's [x,y] values match another value within the snakes array. It will exit.  
         break
 
     
