@@ -1,6 +1,6 @@
-# INSTRUCTIONS: - ARROWS TO PLAY
-#               - SPACEBAR TO PAUSE / RESUME
-#               - ESC BUTTON WHILE CURSER MOVING TO QUIT. WILL NOT ESCAPE IF PAUSED.
+# INSTRUCTIONS: - UP, RIGHT, DOWN, LEFT, ARROWS TO PLAY
+#               - 'SPACEBAR' TO PAUSE / RESUME
+#               - PRESS 'ESC' BUTTON WHILE THE IS CURSER MOVING TO QUIT. WILL NOT ESCAPE IF PAUSED.
 #               - HAVE FUN!! It's even more breaking down the code and understanding it all! :)
 
 
