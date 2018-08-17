@@ -75,7 +75,7 @@ while key != 27:                                                                
     
     if snake[0] == food:                                            # When snakes postion on the window matches the foods position = "eaten". This if statement will execute.
         food = []                                                   # Reassigns food to an empty list, ready to be reassigned.    
-        score += 1                                                  # LVL UP BITCH!
+        score += 1                                                  # LVL UP!
         while food == []:                                           # Executed because the window is hungry for food.
             food = [randint(1, 48), randint(1, 118)]                # Random [x,y] list generated for the food, placing it somewhere on the window next.
             if food in snake:                                       # If the new generated food list values match a set of values within the snakes list, it will reset the while. 
